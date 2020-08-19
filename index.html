@@ -161,17 +161,23 @@
 
             <label for="estado">Estado que reside</label>
             <select name="estado" id="estado">
-               <option value="">SP</option>
-               <option value="">RJ</option>
-               <option value="">BA</option>
-               <option value="">PE</option>
-               <option value="">CE</option>
-               <option value="">RS</option>
+               <option value="">- Selecione -</option>
+               <option value="SP">SP</option>
+               <option value="RJ">RJ</option>
+               <option value="BA">BA</option>
+               <option value="PE">PE</option>
+               <option value="CE">CE</option>
+               <option value="RS">RS</option>
             </select>
          </div>
 
          <div class="row">
-            <button type="submit">Enviar</button>
+            <label for="conheceu">Como você conheceu a Generation?</label>
+            <input type="text" id="conheceu">
+         </div>
+
+         <div class="row">
+            <button onclick="enviar()">Enviar</button>
          </div>
 
       </form>
